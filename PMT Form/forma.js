@@ -115,17 +115,17 @@ form.addEventListener("submit", function (e){
     e.preventDefault();//prevents form from submitting onclick
 
     function validationSubmit(){
-        if(!/^[a-zA-Z]*$/g.test(nombreInput.value) || nombreInput.value === '' || nombreInput.value === null){
+        if(!/^[a-zA-Z-ñÑáÁéÉíÍóÓúÚ]*$/g.test(nombreInput.value) || nombreInput.value === '' || nombreInput.value === null){
             errorMessage.innerText = 'Introduzca su nombre para continuar'
             // console.log('work name')
             return
         }
-        if(!/^[a-zA-Z]*$/g.test(apellidoInput.value) || apellidoInput.value === '' || apellidoInput.value === null){
+        if(!/^[a-zA-Z-ñÑáÁéÉíÍóÓúÚ]*$/g.test(apellidoInput.value) || apellidoInput.value === '' || apellidoInput.value === null){
             errorMessage.innerText = 'Introduzca su apellido para continuar'
             // console.log('work lastname')
             return
         }
-        if(!/^[a-zA-Z]*$/g.test(segundoApellidoInput.value) || segundoApellidoInput.value === '' || segundoApellidoInput.value === null){
+        if(!/^[a-zA-Z-ñÑáÁéÉíÍóÓúÚ]*$/g.test(segundoApellidoInput.value) || segundoApellidoInput.value === '' || segundoApellidoInput.value === null){
             errorMessage.innerText = 'Introduzca su segundo apellido para continuar'
             // console.log('work lastname')
             return
@@ -142,15 +142,13 @@ form.addEventListener("submit", function (e){
         })
             .then(res => res.text())
             .then(data =>{
-                console.log(data);
-                console.log("fetch wroked");
+                // console.log(data);
+                // console.log("fetch wroked");
                     if(data === "false"){
                         alert("Este correo ya existe, contáctanos para recibir la información de nuevo");
 
                     }else{
-                        alert("¡Registración completa!");
-
-                        console.log('working')
+                        // console.log('working')
                         
                         // hide top layer and form
                         formContainer.classList.add('hide1');

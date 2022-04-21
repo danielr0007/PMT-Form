@@ -63,48 +63,28 @@ $conn = new mysqli($servername, $username, $password, $database);
 
                 //LAST UPDATED APRIL 6   9:03 PM     *****************
                     //sending email
-$bodyMessage = '<body style="background-color: #ffffff; color: #00002f; text-align: center">
+$bodyMessage = '<body style="background-color: #ffffff; color: #00002f; text-align: left">
             
-<pre>Buenas tardes '.$firstName.', soy Ruth, CEO de PaMi Tierra Envíos. ¡Felicidades por la adquisición de tu casillero!
+<pre>Bienvenido(a) '.$firstName.', Soy Daniel, CEO de Pamitierraenvios. ¡Felicitaciones por la adquisición de tu casillero!
 
 
-Con este casillero, ahora puedes comprar en las tiendas online de EE. UU. como si tú mismo vivieras allí. Eso significa que puedes disfrutar de todos los beneficios que los compradores americanos disfrutan...
-
-    - Consigue productos 100% auténticos.
-
-    - Acceso a productos de edición limitada, no disponible
-    s en ningún otro lugar (solo en EE. UU.).
-
-    - Acceso anticipado a productos meses antes de que lleguen a Colombia.
-
-    - Oportunidad de participar en el famoso Viernes Negro (Black Friday), en el que los descuentos pueden llegar hasta el 70%.
-
-    - Ventas mensuales imbatibles con numerosos productos.
-
-    - Consigue los precios más bajos en tus marcas favoritas.
-
-¿Y la mejor parte?
+Tu número de casillero es: '.$locker.'
 
 
-No tienes que preocuparte de nada más que comprar... nosotros nos encargamos de las tasas de importación, el papeleo, la recepción, el embalaje, la entrega, etc.
+Anota ese número, ya que lo necesitaras para hacer tus compras en EEUU desde Colombia.
 
 
-¡Ahora eres libre! Eres libre de tener que pagar en exceso, eres libre de estar sometido a límites de compras y eres libre de tener que hacer largas búsquedas de productos que, a menudo, se convierten en una decepción.
+Abajo tienes un enlace que te llevara al PDF que tiene la dirección del casillero y los pasos para hacer tu primera compra.
 
 
-Ahora, sé que la percepción de comprar por Internet en otro país puede ser un poco intimidante, pero yo te aseguro que es supersimple y seguro.
+Cualquier pregunta estamos disponibles vía WhatsApp o email; estamos aquí para ayudarte.
 
 
-Tanto es así, que cientos de nuestros clientes, de diferentes edades, ya lo están haciendo. Además, siempre estamos disponibles para ayudarte y guiarte a través de todo el proceso utilizando la red social WhatsApp.
+Whatsapp: +1 954 682 2058
 
+</pre>
 
-Así que empecemos. </pre><h3>Proceso de compra<h3><p> Para completar con éxito tu primera compra, necesitarás 3 cosas.
-
-1) Un método de pago: una tarjeta de crédito, una tarjeta prepago, o una aplicación de pago como PayPal o NEQUI
-
-2) La dirección de tu casillero: 5401 NW 102 AVE, Ste 139, Sunrise, FL, 33351
-
-3) El número de tu casillero: '.$locker.' </p><h4>Haz click <a href="https://pamitierraenvios.com">aquí</a> para ver todos los pasos en detalle</h4>
+</p><h4>Haz click <a href="https://drive.google.com/file/d/1z_xK5uDUXLdsqDo0k0Fu_mmhl12Me0b_/view?usp=sharing">aquí</a> para ver todos los pasos en detalle</h4>
 </body>';
 
 
@@ -112,7 +92,7 @@ Así que empecemos. </pre><h3>Proceso de compra<h3><p> Para completar con éxito
 
 
                 $to = $email;
-                $subject = 'Bienvenido a PaMiTierra Envios :)!';
+                $subject = 'Bienvenido(a) a PaMiTierraEnvios!';
                 $message = $bodyMessage;
 
                 $headers = "From: PaMiTierra Envios<pamitierraenvios@gmail.com>\r\n";
@@ -124,4 +104,5 @@ Así que empecemos. </pre><h3>Proceso de compra<h3><p> Para completar con éxito
 
         }
     }
+
 

@@ -414,6 +414,17 @@ header img{
 
 }
 
+.rightside h4{
+    display: block;
+    font-size: clamp(.4rem, .5rem + .8vw, 1rem);
+    font-family: var(--bodyfont-font-family);
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 2px;
+}
+
 #error-message{
     color: red;
     font-size: 0.8rem;
@@ -562,7 +573,7 @@ footer{
         border-left: none;
         border-top: solid yellow 5px;
         transform: translate(0px, -5px);
-        background-color: rgb(41, 144, 253) ;
+        background-color: rgb(132, 192, 255) ;
     }
     
     .highlight{
@@ -646,7 +657,7 @@ footer{
         /* text-align: center; */
         /* color: rgb(255, 174, 0); */
         /* font-family: var(--bodyfont-font-family); */
-        font-size: 13px;
+        font-size: 18px;
     }
     
     .pasos h2{
@@ -904,6 +915,7 @@ footer{
     /* box-shadow: 0 3rem 5rem rgba(0,0,0,0.3); */
     /* z-index: 10; */
     display: block;
+    margin-top: 130px;
 }
 
 #form-element{
@@ -947,7 +959,17 @@ footer{
     /* text-align: center; */
     margin-top: 30px;
     margin-bottom: 40px;
+}
 
+.rightside h4{
+    /* display: block; */
+    font-size: 13px;
+    /* font-family: var(--bodyfont-font-family); */
+    /* font-weight: 400; */
+    /* line-height: 1.4; */
+    /* text-align: center; */
+    margin-top: 8px;
+    margin-bottom: 2px;
 }
 
 /* container around form element */
