@@ -117,7 +117,7 @@ form.addEventListener("submit", function (e) {
 
   function validationSubmit() {
     if (
-      !/^[a-zA-Z-ñÑáÁéÉíÍóÓúÚ]*$/g.test(nombreInput.value) ||
+      // !/^[a-zA-Z-ñÑáÁéÉíÍóÓúÚ]*$/g.test(nombreInput.value) ||
       nombreInput.value === "" ||
       nombreInput.value === null
     ) {
@@ -126,7 +126,7 @@ form.addEventListener("submit", function (e) {
       return;
     }
     if (
-      !/^[a-zA-Z-ñÑáÁéÉíÍóÓúÚ]*$/g.test(apellidoInput.value) ||
+      // !/^[a-zA-Z-ñÑáÁéÉíÍóÓúÚ]*$/g.test(apellidoInput.value) ||
       apellidoInput.value === "" ||
       apellidoInput.value === null
     ) {
@@ -135,7 +135,7 @@ form.addEventListener("submit", function (e) {
       return;
     }
     if (
-      !/^[a-zA-Z-ñÑáÁéÉíÍóÓúÚ]*$/g.test(segundoApellidoInput.value) ||
+      // !/^[a-zA-Z-ñÑáÁéÉíÍóÓúÚ]*$/g.test(segundoApellidoInput.value) ||
       segundoApellidoInput.value === "" ||
       segundoApellidoInput.value === null
     ) {
